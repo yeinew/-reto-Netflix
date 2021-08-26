@@ -72,6 +72,7 @@ a {
 .featured {
     margin-top: -90px;
     position: relative;
+    overflow: hidden;
 }
 
 .featured-details {
@@ -112,8 +113,8 @@ a {
     /* height: 100px; */
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     padding-bottom: 2em;
+    align-items: center;
 }
 
 .button {
@@ -167,16 +168,8 @@ a {
     background: url(../../images/icons/info.svg);
 }
 
-.footer {
-    border: 1px solid red;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .list-content {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* display: flex; */
     white-space: nowrap;
     overflow-x: auto;
@@ -184,4 +177,34 @@ a {
 
 .list-item {
     display: inline-block;
+    margin-left: 10px;
+}
+
+.list-item:first-child {
+    margin: 0;
+}
+
+.list {
+    /* border: 1px solid yellow; */
+    padding: 0 1em;
+}
+
+main {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer {
+    border: 1px solid red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+}
+
+.tab-list {
+    border: 1px solid green;
 }
