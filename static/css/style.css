@@ -1,19 +1,19 @@
 @font-face {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     src: url(../../fonts/AvenirNextLTPro-Regular.otf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     src: url(../../fonts/AvenirNextLTPro-Regular.otf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     src: url(../../fonts/AvenirNextLTPro-Bold.otf);
     font-weight: 700;
     font-style: normal;
@@ -31,7 +31,7 @@ body {
     padding: 15px 15px 100px;
     position: relative;
     z-index: 2;
-    background-image: linear-gradient(to bottom, black 0%, black 50%, rgba(0, 0, 0, .5) 85%, transparent 100%);
+    background-image: linear-gradient( to bottom, black 0%, black 50%, rgba(0, 0, 0, 0.5) 85%, transparent 100%);
 }
 
 .credits {
@@ -44,7 +44,7 @@ body {
 }
 
 .credits a {
-    color: #F865B0;
+    color: #f865b0;
     text-decoration: none;
 }
 
@@ -75,16 +75,16 @@ a {
 }
 
 .featured-details {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to top, black 0%, transparent 100%);
+    background-image: linear-gradient( to top, black 0%, black 40%, transparent 100%);
 }
 
 .tags {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -98,7 +98,7 @@ a {
 }
 
 .tag:before {
-    content: '•';
+    content: "•";
     margin-right: 10px;
     position: relative;
     top: 1px;
@@ -118,8 +118,70 @@ a {
 
 .button {
     border: 1px solid blue;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 1em 5px 0.5em;
+    border: none;
+    border-radius: 3px;
+}
+
+.button::before {
+    /* border: 1px solid red; */
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 }
 
 .button-secondary {
-    border: 1px solid orange;
+    background: none;
+    color: white;
+    /* border: 1px solid orange; */
+    font-size: 1.1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.button-secondary::before {
+    content: "";
+    display: block;
+    /* border: 1px solid green; */
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.icon-plus::before {
+    background: url(../../images/icons/plus.svg);
+}
+
+.icon-play::before {
+    background: url(../../images/icons/play.svg);
+}
+
+.icon-info::before {
+    background: url(../../images/icons/info.svg);
+}
+
+.footer {
+    border: 1px solid red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.list-content {
+    border: 1px solid red;
+    /* display: flex; */
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.list-item {
+    display: inline-block;
 }
